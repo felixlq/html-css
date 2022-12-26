@@ -10,12 +10,41 @@
 </head>
 
 <body>
-    <h1>Trabalhando com Imagens Dinâmicas</h1>
+    <h1>Trabalhando com mídias</h1>
+    <h2>Imagens Dinâmicas</h2>
     <picture>
         <source media="(min-width:1010px )" srcset="./imagens/foto-g.png">
         <source media="(min-width:730px )" srcset="./imagens/foto-m.png">
         <img src="imagens/foto-p.png" alt="Imagem Dinâmica">
     </picture>
+    
+    
+    <h2>Áudios</h2><br>
+    <p>Sound Mario dies</p>
+    <audio preload="metadata" controls>
+        <source src="midia/smb_mariodie.wav" type="audio/wav">
+    </audio>
+
+    <p>Sound Game Over</p>
+    <audio src="midia/smb_gameover.wav" controls></audio><br>
+
+
+
+    <h2>Vídeos</h2>
+    <video width="200" height="200" poster="imagens/Sem título.jpg" preload ="metadata" controls>
+        <source src="videos/Aviao.m4v" type="video/mp4">
+        <source src="videos/Aviao.mp4" type="video/m4v">
+        <p>Seu navegador não tem compatibilidade com o reprodutor de vídeos</p>
+    </video>
+    
+    <h3>Inserindo Vídeos do YouTube</h3>
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    
+    <br><br>
+    <a href="pagina02.html">Pagina 02</a><br><br>    
 </body>
+
+
 
 </html>

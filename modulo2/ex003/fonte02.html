@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas CSS</title>
+    <style>
+        @font-face {
+            font-family:'School';
+            src: url('./fonts/BeTrueToYourSchool-Regular.otf') format('opentype'), 
+            url('./fonts/BeTrueToYourSchool-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'romantic';
+            src: url(./fonts/Pantherdam\ Signature.otf) format('opentype'),
+            url(./fonts/Pantherdam\ Signature.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family:'Courier New', Courier, monospace;
+            font-weight: normal;
+        }
+        h1{
+            font-family: 'School', Courier, monospace;
+            font-size: 4em;
+            font-weight: 200;
+            font-style: normal;
+        }
+        h2{
+            font-family: 'romantic';
+            font-size: 4em;
+            font-weight: normal;
+            font-style: normal;
+        }
+        p{
+            font-weight: normal; 
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes externas</h1>
+    <h2>Título1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure, nobis, assumenda aspernatur repellendus illum ipsa voluptate qui deleniti suscipit molestias delectus asperiores numquam ab quibusdam rem dolores. Dicta, veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab architecto rem maxime aliquid cum, fugiat explicabo. Autem aspernatur odio sequi distinctio, suscipit eveniet neque nihil, deleniti veniam adipisci alias!</p>
+</body>
+</html>

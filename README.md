@@ -1,2 +1,2 @@
 # html-css
-## Estudo de frontend através do curso de Gustavo Guanabara - www.cursoemvideo.com
+## Estudo de front-end através do curso de Gustavo Guanabara - www.cursoemvideo.com

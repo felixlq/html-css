@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos Vertical</title>
+<style>
+section#conteiner{
+    position: relative;
+    height: 500px;
+    padding: 10px;
+    background-color: rgb(170, 16, 16);
+}
+
+article#conteudo{
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(203, 223, 30);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#externo{
+    position: relative;
+    background-color: rgb(4, 109, 4);
+    height: 400px;
+    width: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+div#interno{
+    background-color: rgb(14, 39, 153);
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+
+</style>
+</head>
+<body>
+    <section id="conteiner">
+        <div id="externo">
+            <article id="conteudo">
+                <div id="interno">
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

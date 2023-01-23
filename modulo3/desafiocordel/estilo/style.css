@@ -18,20 +18,20 @@
 }
 
 html, body{
-    background-color: rgb(196, 190, 190);
+    background-color: rgb(8, 8, 8);
     min-height: 100vh;
     font-family: var(--fonte1);
 }
 
 header {
+    mask-position: relative;
     background-image: url(/modulo3/desafiocordel/imagens/cordelbackground.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: scroll;
     background-size: cover;
     margin: auto;
     max-width: 1500px;
-    background-color: black;    
+    background-color: black;
 }
 
 
@@ -80,20 +80,38 @@ section {
     padding-bottom: 10vh;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: rgb(0, 0, 0)
 }
 
 section.imagem {
-    background-color: rgb(41, 40, 40);
-    color: wheat;
+    background-color: rgb(36, 35, 35);
+    color: rgb(216, 212, 203);
+    background-size: cover;
+    background-attachment: fixed;    
+    box-shadow: inset 6px 6px 13px 0px rgba(12, 12, 12, 0.596);
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 section.imagem > p {
-    background-color: rgba(12, 12, 12, 0.295);
+    background-color: rgba(12, 12, 12, 0.5);
     display: inline-block;
     padding: 10px;
+    text-shadow: 1px 1px 0px rgb(37, 37, 37);
 }
 
 footer {

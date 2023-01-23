@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Cordel';
+    src: url('/modulo3/desafiocordel/fonts/Cordel\ Encarnado.otf') format('opentype'), url('/modulo3/desafiocordel/fonts/ShadowsIntoLight-Regular.ttf') format('truetype');
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Cordel';
+    --fonte3: 'Amatic SC', cursive;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,22 +20,43 @@
 html, body{
     background-color: rgb(196, 190, 190);
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
-    color: white;
-    text-align: center;
+    background-image: url(/modulo3/desafiocordel/imagens/cordelbackground.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 1500px;
+    background-color: black;    
 }
+
+
 header h1 {
-    font-size: 6em;
-    padding-top: 50px;
-    font-family: 'Bebas Neue', cursive;
+    font-size: 4.5em;
+    padding-top: 40px;
+    padding-bottom: 250px;
+    font-family: var(--fonte2);
     font-weight: normal;
     font-variant: small-caps;
+    color: rgb(94, 22, 22);
+    text-align: center;
 }
 header > p {
-    padding-bottom: 50px;
+    font-family: var(--fonte1);
+    color: rgb(94, 22, 22);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header  a {
+    color: rgb(94, 22, 22);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a {
@@ -37,10 +70,14 @@ a:hover {
 }
 
 section {
+    font-family: var(--fonte3);
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-align: justify;
     padding-left: 30px;
     line-height: 2em;
     padding-top: 10vh;
-    padding-bottom: 10%;
+    padding-bottom: 10vh;
 }
 
 section.normal {
@@ -55,7 +92,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(12, 12, 12, 0.295);
-    max-width: 400px;
+    display: inline-block;
+    padding: 10px;
 }
 
 footer {

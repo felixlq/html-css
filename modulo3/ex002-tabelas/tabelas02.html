@@ -11,9 +11,10 @@
             height: 25px;
             border: 1px solid black;
             border-collapse: collapse;
+            position: relative;
         }
 
-        caption{
+        caption{    /* Título da tabela*/
             font-size: 1.5em;
             background-color: rgb(179, 176, 176);
             padding: 5px;
@@ -24,8 +25,14 @@
         thead{
             height: 30px;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(52, 52, 52);
+            background-color: rgb(53, 53, 53);
             color: white;
+        }
+
+        thead > tr > th {       /*efeito de congelar paineis*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(53, 53, 53); 
         }
 
         tbody > tr:nth-child(2n){
@@ -58,7 +65,9 @@
         ANATOMIA PARA TABELAS GRANDES
         TABLE
             THEAD
-                tr, td, th
+                <tr> </tr> (row => Linha), 
+                <td> </td> (data => dados da célula), 
+                <th> </th> (header = títulos de colunas)
             TBODY
                 tr, td, th
             TFOOT
@@ -66,7 +75,7 @@
     -->
 
     <table>
-        <caption>Unidades de federação mais populosas do Brasil</caption>
+        <caption>Unidades de federação</caption>
         <thead>
             <tr>
                 <th>Estado</th>
@@ -102,16 +111,116 @@
                 <td>Pernambuco</td>
                 <td class="numero">9.051.113</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.732.660</td>    
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.615.526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.659.023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.835.379</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11.088.065</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.051.113</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.732.660</td>    
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.615.526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.659.023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.835.379</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11.088.065</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.051.113</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.732.660</td>    
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.615.526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.659.023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.835.379</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11.088.065</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.051.113</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>calculando...</strong></td>
             </tr>
-            
         </tfoot>
     </table>
-
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolorem non eos unde odit obcaecati odio. Tempora rerum facere accusamus ratione consectetur sunt. Quisquam maiores nulla animi velit nostrum nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere dignissimos magnam libero ipsam, nulla, reiciendis nemo adipisci impedit numquam atque iusto sunt amet rerum beatae repellat, consequuntur sequi et!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel delectus praesentium aliquid inventore iste a assumenda facilis sapiente quas, eum sit sint explicabo rerum tempora cumque rem blanditiis consequuntur.</p>
 
 </body>
 </html>

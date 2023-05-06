@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+        thead>tr>td{
+            color: rgb(0, 0, 0);
+            border: 1px solid grey;
+            background-color: grey;
+            font-weight: bold;
+        }
+
+        .titulos{
+            font-weight: bold;
+            padding: 2px;
+        }
+        #nordeste{
+            font-size: 1.1em;
+            transform: rotate(270deg);
+            padding: 0px;
+        }
+
+        .dados:nth-child(2n){
+            background-color: rgba(112, 128, 144, 0.349);
+        }
+        
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <title>Efeito Zebrado em Tabelas</title>
+    
+</head>
+<body>
+    <h1>Estudo de tabelas</h1>
+    <h3>Linhas zebradas</h3>
+    <h3>Mesclagem de células</h3>
+    <h3>rotação de texto</h3><br><br><br>
+    <table>
+        <thead>
+            <tr><td colspan="4">População do Nordeste Brasileiro por Estado</td></tr>
+        </thead>
+            <tr class="titulos">
+                <td rowspan="10" id="nordeste">Nordeste</td>
+                <td>Estados</td>
+                <td>Capitais</td>
+                <td>População</td>
+            </tr>
+        <tr class="dados">
+            <td>Alagoas - AL</td>
+            <td>Maceió</td>
+            <td>3.322.820</td>
+        </tr>
+        <tr class="dados">
+            <td>Bahia - BA</td>
+            <td>Salvador</td>
+            <td>14.812.617</td>
+        </tr>
+        <tr class="dados">
+            <td>Ceará - CE</td>
+            <td>Fortaleza</td>
+            <td>9.075.649</td>
+        </tr>
+        <tr class="dados">
+            <td>Maranhão - MA</td>
+            <td>São Luis</td>
+            <td>7.035.055</td>
+        </tr>
+        <tr class="dados">
+            <td>Paraíba - PB</td>
+            <td>João Pessoa</td>
+            <td>3.996.496</td>
+        </tr>
+        <tr class="dados">
+            <td>Pernambuco - PE</td>
+            <td>Recife</td>
+            <td>9.496.294</td>
+        </tr>
+        <tr class="dados">
+            <td>Piauí - PI</td>
+            <td>Teresina</td>
+            <td>3.264.531</td>
+        </tr>
+        <tr class="dados">
+            <td>Rio Grande do Norte - RN</td>
+            <td>Natal</td>
+            <td>3.479.010</td>
+        </tr>
+        <tr class="dados">
+            <td>Sergipe - SE</td>
+            <td>Aracajú</td>
+            <td>2.278.308</td>
+        </tr>
+    </table>
+</body>
+</html>

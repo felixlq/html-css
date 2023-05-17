@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03 - Tabelas com Escopo</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight:200; 
+            padding: 20px;
+            font-size: 2em;
+        } 
+        
+        th{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3em;
+            color: white;
+            border: 1px solid black;
+            padding: 5px;
+            width: 150px;
+            background-color: rgba(128, 128, 128, 0.842);
+        }
+
+        td{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+            width: 150px;
+        }
+
+        #medias{
+            background-color: rgba(128, 128, 128, 0.842);
+            font-weight: bolder;
+            color: white;
+        }
+
+        #cadeiras {
+            background-color: white;
+            color: black;
+        }
+        
+        #materias {
+            background-color: white;
+            font-weight: 800;
+            font-size: 1.5em;
+            color: black;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Desafio 03 - Tabelas com Escopo</h1>
+    
+        
+    <table>
+        <Caption>
+            Boletim Escolar
+        </Caption>    
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplina</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Primeira unidade</th>
+                <th scope="col">Segunda unidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="5" id="materias">Exatas</th>
+            </tr>
+            <tr>
+                <th scope="row" id="cadeiras">Matemática</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="cadeiras">Física</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="cadeiras">Química</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="cadeiras">Biologia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Média de exatas</th>
+                <td id="medias">0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2" id="materias">Humanas</th>
+                <th scope="row" id="cadeiras">Geografia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="cadeiras">História</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4">Médias de Humanas</th>
+                <td id="medias">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

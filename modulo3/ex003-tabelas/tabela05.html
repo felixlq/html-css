@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Respopnsivas</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        tbody>:nth-child(2n){
+            background-color: rgba(169, 169, 169, 0.377);
+        }
+
+        thead>tr>th{
+            color: aqua;
+            width: 150px;
+            padding: 10px;
+            background-color: black;
+            border: 3px solid rgb(128, 128, 128);
+
+        }
+
+        caption{
+            font-family: 'Oswald', sans-serif;
+            text-align: left;
+            font-size: 2.0em;
+            padding: 8px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        col.CProduto{
+            color: red;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        div#container{
+            overflow-x: auto;
+        }
+
+        tfoot>tr>td{
+            text-align: right;
+            font-style: italic;
+            border: 0px;
+            
+        }
+        
+    
+    </style>
+
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae error ducimus quod natus, unde hic harum mollitia eaque eos, blanditiis illo ut accusamus libero sequi a pariatur consectetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam at distinctio nesciunt error sint nam numquam eligendi impedit repellat. Beatae atque suscipit veniam. At voluptas ullam voluptates alias corrupti minus!
+        </p><br>
+
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="CProduto">
+            </colgroup>
+            <caption>
+                Canal Smart TVs - vendas 2022
+            </caption>
+            
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <td>Tv 20" Panasonic</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" Samsumg</td>
+                    <td>18</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" Toshiba</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" JVC</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" LG</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" AOC</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" Acer</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" Sony</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" Android</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" CCE</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Tv 20" Semp</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="13">Fonte: Revista Forbes 2022.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
